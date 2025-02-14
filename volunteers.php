@@ -1,11 +1,7 @@
 <?php
 session_start();
 
-// التحقق مما إذا كان المستخدم قد سجل الدخول
-if (!isset($_SESSION['user_id'])) {
-    header("Location: login.html"); // إذا لم يكن مسجلاً، يتم نقله إلى صفحة تسجيل الدخول
-    exit();
-}
+
 
 // جلب بيانات المستخدم من الجلسة
 $user_id = $_SESSION['user_id'];
